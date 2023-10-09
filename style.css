@@ -1,0 +1,14 @@
+/* style.css */
+.Post_Form{
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 35%;
+    padding: 5px;
+}

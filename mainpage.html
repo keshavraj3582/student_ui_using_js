@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Category Page</title>
+    <style>
+        h3 {
+            padding-left: 40%;
+            color:black;
+        }
+        button {
+            display: flex;
+            background-color:orangered;
+            color: black;
+            padding: 8px 4px;
+            margin: 8px 0;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 10%;
+        }
+      
+        .container {
+            padding-left: 30%;
+        }
+        
+
+    </style>
+    <script src="mainpage.js"></script>
+</head>
+<body>
+    <h3>Student_Information_Management_System</h3>
+    <div class=container>
+        <button type="submit" onclick="addStudent()"> Add </button>
+        <button type="submit" onclick="updateStudent()">Update </button>
+        <button type="submit" onclick="deleteStudent()">Delete </button>
+        <!-- <button type="submit" onclick="getStudentById()">Get Stduent Details By Student Id</button>
+        <button type="submit" onclick="getAllStudent()">Get All Student</button> -->
+    </div>
+</body>
+</html>
