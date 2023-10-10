@@ -11,10 +11,10 @@ document.getElementById('postDataForm').addEventListener('submit', function(even
     const topicValue = document.getElementById('topic').value;
     const semesterValue = document.getElementById('Semester').value;
     const relationValue = document.getElementById('Relation').value;
-    const raisedhandsValue = document.getElementById('raisedhands').value;
-    const VisITedResourcesValue = document.getElementById('VisITedResources').value;
-    const announcementsViewValue= document.getElementById('AnnouncementsView').value;
-    const DiscussionValue= document.getElementById('Discussion').value;
+    const raisedhandsValue = document.getElementById('raisedhands').value.trim() === "" ? null : parseInt(document.getElementById('raisedhands').value, 10);
+    const VisITedResourcesValue = document.getElementById('VisITedResources').value.trim() === "" ? null : parseInt(document.getElementById('VisITedResources').value, 10);
+    const announcementsViewValue= document.getElementById('AnnouncementsView').value.trim() === "" ? null : parseInt(document.getElementById('AnnouncementsView').value, 10);
+    const DiscussionValue= document.getElementById('Discussion').value.trim() === "" ? null : parseInt(document.getElementById('Discussion').value, 10);
     const ParentAnsweringSurveyValue = document.getElementById('ParentAnsweringSurvey').value;   
     const ParentschoolSatisfactionValue = document.getElementById('ParentschoolSatisfaction').value;
     const StudentAbsenceDaysValue = document.getElementById('StudentAbsenceDays').value;
@@ -43,7 +43,9 @@ document.getElementById('postDataForm').addEventListener('submit', function(even
         Class:classIDValue
     };
 
-    const apiUrl = 'http://localhost:5180/api/Studentapi/';
+    const apiUrl='https://localhost:7124/api/studentapi';
+
+   // const apiUrl = 'http://localhost:5180/api/Studentapi/';
 
     console.log('API URL:', apiUrl);
     console.log('Request Data:', postData);
