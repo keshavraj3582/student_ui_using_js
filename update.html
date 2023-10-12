@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Data</title>
+</head>
+<body>
+    <div id="updateStatus" style="color: green;"></div>
+    <h1>Update Student Data</h1>
+    <label for="studentId">Enter Student ID:</label>
+    <input type="text" id="studentIdInput">
+    <button onclick="fetchStudentData()">Get Data for Update</button>
+    <form id="updateForm">    
+            <input type="text" id="studentId" required><br>
+            <input type="text" id="gender" ><br>
+            <input type="text" id="nationalIty" ><br>
+            <input type="text" id="placeofBirth" ><br>
+            <input type="text" id="stageId" ><br>
+            <input type="text" id="gradeId" ><br>
+            <input type="text" id="sectionId" ><br>
+            <input type="text" id="topic" ><br>
+            <input type="text" id="semester" ><br>
+            <input type="text" id="relation" ><br>
+            <input type="number" id="raisedhands" ><br>
+            <input type="number" id="visItedResources" ><br>
+            <input type="number" id="announcementsView" ><br>
+            <input type="number" id="discussion" ><br>
+            <input type="text" id="parentAnsweringSurvey" ><br>
+            <input type="text" id="parentschoolSatisfaction" ><br>
+            <input type="text" id="studentAbsenceDays"><br>
+            <input type="number" id="studentMarks"><br>
+            <input type="text" id="class"><br>
+        
+        <button onclick="updateStudentData()">Update Data</button>
+    </form>
+    <div id="updateStatus"></div>
+    <script src="update.js"></script>
+</body>
+</html>
+
