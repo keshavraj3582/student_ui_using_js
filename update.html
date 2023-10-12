@@ -11,30 +11,127 @@
     <label for="studentId">Enter Student ID:</label>
     <input type="text" id="studentIdInput">
     <button onclick="fetchStudentData()">Get Data for Update</button>
-    <form id="updateForm">    
-            <input type="text" id="studentId" required><br>
-            <input type="text" id="gender" ><br>
-            <input type="text" id="nationalIty" ><br>
-            <input type="text" id="placeofBirth" ><br>
-            <input type="text" id="stageId" ><br>
-            <input type="text" id="gradeId" ><br>
-            <input type="text" id="sectionId" ><br>
-            <input type="text" id="topic" ><br>
-            <input type="text" id="semester" ><br>
-            <input type="text" id="relation" ><br>
-            <input type="number" id="raisedhands" ><br>
-            <input type="number" id="visItedResources" ><br>
-            <input type="number" id="announcementsView" ><br>
-            <input type="number" id="discussion" ><br>
-            <input type="text" id="parentAnsweringSurvey" ><br>
-            <input type="text" id="parentschoolSatisfaction" ><br>
-            <input type="text" id="studentAbsenceDays"><br>
-            <input type="number" id="studentMarks"><br>
-            <input type="text" id="class"><br>
+    <style>
+        .form-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+      
+        .form-group label {
+          width: 200px; 
+          text-align: right;
+          margin-right: 10px;
+        }
+      
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+          width: 20%; 
+          padding: 5px;
+        }
+      </style>
+    <form id="updateForm">
+        <br>
+        <div class="form-group">
+        <label for="studentId">Student Id (Can't be Updated):</label>
+        <input type="text" id="studentId" readonly><br>
+        </div>
+        
+        <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender"><br>
+        </div>
+        
+        <div class="form-group">
+        <label for="nationalIty">Nationality:</label>
+        <input type="text" id="nationalIty"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="placeofBirth">Place of Birth:</label>
+        <input type="text" id="placeofBirth"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="stageId">Stage Id:</label>
+        <input type text" id="stageId"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="gradeId">Grade Id:</label>
+        <input type="text" id="gradeId"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="sectionId">Section Id:</label>
+        <input type="text" id="sectionId"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="semester">Semester:</label>
+        <input type="text" id="semester"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="relation">Relation:</label>
+        <input type="text" id="relation"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="raisedhands">Raised Hands:</label>
+        <input type="number" id="raisedhands"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="visItedResources">Visited Resources:</label>
+        <input type="number" id="visItedResources"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="announcementsView">Announcements View:</label>
+        <input type="number" id="announcementsView"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="discussion">Discussion:</label>
+        <input type="number" id="discussion"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="parentAnsweringSurvey">Parent Answering Survey:</label>
+        <input type="text" id="parentAnsweringSurvey"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="parentschoolSatisfaction">Parent School Satisfaction:</label>
+        <input type="text" id="parentschoolSatisfaction"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="studentAbsenceDays">Student Absence Days:</label>
+        <input type="text" id="studentAbsenceDays"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="studentMarks">Student Marks:</label>
+        <input type="number" id="studentMarks"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="class">Class:</label>
+        <input type="text" id="class"><br>
+        </div>
+
         
         <button onclick="updateStudentData()">Update Data</button>
     </form>
-    <div id="updateStatus"></div>
+    <div id="updateStatus" style="color: green;"></div>
     <script src="update.js"></script>
 </body>
 </html>

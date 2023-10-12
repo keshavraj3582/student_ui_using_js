@@ -12,7 +12,7 @@ async function fetchStudentData() {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         studentData = await response.json();
-        document.getElementById('studentId').value = studentData.studentId;
+        document.getElementById('studentId').value = studentData.studentId; 
         document.getElementById('gender').value = studentData.gender;
         document.getElementById('nationalIty').value=studentData.nationalIty;
         document.getElementById('placeofBirth').value=studentData.placeofBirth;
@@ -76,7 +76,7 @@ async function updateStudentData() {
 
         if (response.status === 200) {
             document.getElementById('updateStatus').textContent = 'Student data updated successfully.';
-            document.getElementById('updateStatus').textContent = 'Student data updated successfully.';
+            alert("updated successfully")
         } else {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
