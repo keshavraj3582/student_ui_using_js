@@ -3,6 +3,10 @@ function addStudent() {
     window.location.href = "post.html"
 
 }
+function getStudent()
+{
+    window.location.href="get.html"
+}
 
  
 
